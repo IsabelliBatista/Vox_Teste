@@ -17,4 +17,16 @@ describe('Página de Login', () => {
     cy.get('.inventory_list > :nth-child(6)').should('be.visible')
   })
 
+  it('Interage com elementos da página', () => {
+    // seleciona a ordenação dos itens
+    cy.wait(2000)
+    cy.get('.product_sort_container').select('za')
+    cy.wait(2000)
+    cy.get('.product_sort_container').select('az')
+    
+    // seleciona o menu lateral
+    cy.get('.bm-burger-button > button').click()
+    cy.get('#about_sidebar_link').click()
+
+  })
 })
