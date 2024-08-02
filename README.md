@@ -4,8 +4,8 @@
 
   ### Para rodar é necessário ter instalado:
   - Node
-  - Npm npm install
-  - Cypress `npx cypress install`
+  - Npm `npm install`
+  - Cypress `npm install cypress`
 
   ### Depois só rodar o cypress
   `npx cypress open`
