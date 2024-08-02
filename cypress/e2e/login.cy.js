@@ -20,7 +20,9 @@ describe('Página de Login', () => {
   })
   it('Login com sucesso', () => {
     cy.login(login, pwd)
-    cy.url().should('include', '/inventory.html');
+
+    // valida a url, a página pós login
+    cy.url().should('include', '/inventory.html')
   })
 
 })
